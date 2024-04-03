@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+	<!-- Head tag starts from here -->
+	<head lang="en">
+		<title>Tours_and_Travels</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<!-- <script src="js/web_project.js"></script> -->
+	</head><!-- head tag ends here-->
+	<!-- Body starts from here -->
+	<body>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top<i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+		<!-- login div starts here -->
+		<div class="login">
+			<div class="opening"><b><i class="fa fa-clock-o" aria-hidden="true"></i> Mon-Sat 8:00-18:00. Sunday CLOSED</b></div>
+			<div class="register"><b><i class="fa fa-phone" aria-hidden="true"></i> 0123456789 &nbsp;&nbsp; <i class="fa fa-map-marker" aria-hidden="true"></i>1010 Moon ave, New York, NY US &nbsp;&nbsp;  <a class="reg" href="registor.html">Register</a></b></div>
+		</div><!-- login div ends here-->
+		<!-- container div starts from here -->
+		<div class="container01">
+			<div class="menu">
+			<div class="tours">
+				<i class="fa fa-plane" aria-hidden="true"></i><b>
+				Peaceful <span>Travels and Tours</span> </b>
+			</div>
+			<div class="home">
+				<ul>
+					<li>
+						<div class="dropdown">
+						  <button class="dropbtn"><a href="index.html">HOME</a></button>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+						  <button class="dropbtn"><a href="tour.html">TOUR</a></button>
+						  <div class="dropdown-content">
+						    <a href="#">Summer Tour</a>
+						    <a href="#">Vacation Tour</a>
+						    <a href="#">Family Tour</a>
+						  </div>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+						  <button class="dropbtn"><a href="Destination.html">DESTINATION</a></button>
+						  <div class="dropdown-content">
+						    <a href="#">Europe</a>
+						    <a href="#">Asia</a>
+						  </div>
+						</div>
+					</li>
+					<li><div class="dropdown">
+						  <button class="dropbtn"><a href="gallery.html">GALLERY</a></button>
+						  <div class="dropdown-content">
+						    <a href="gallery.html">Asia Tour</a>
+						    <a href="gallery.html">Europe Tour</a>
+						  </div>
+						</div></li>
+					<li>
+						<div class="dropdown">
+						  <button class="dropbtn"><a href="contact.html">CONTACT</a></button>
+						</div>
+					</li>
+					<li>
+						<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+						<div id="id01" class="modal">
+						   <form class="modal-content animate" action="/action_page.php" method="post">
+						      <div class="imgcontainer">
+						         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						         <img src="picture/01.jpg" alt="Avatar" class="avatar">
+						      </div>
+						      <div class="container">
+						      	<label><b>Username</b></label>
+						      	<input type="text" placeholder="Enter Username" name="uname" required>
+							      <label><b>Password</b></label>
+						   	   <input type="password" placeholder="Enter Password" name="psw" required>  
+							      <button type="submit">Login</button>
+						   	   <input type="checkbox" checked="checked"> Remember me
+						      </div>
+						      <div class="container" style="background-color:#f1f1f1">
+						      	<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+						      	<span class="psw">Forgot <a href="#">password?</a></span>
+						      </div>
+						   </form>
+						</div><!-- model div ends here-->
+					</li>
+					<li>
+						<div class="dropdown">
+						  <button class="dropbtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</div>
+					</li>
+				</ul>
+			</div><!--closing of home div-->
+			</div><!-- menu div ends here-->
+		</div><!-- container div ends here -->
+		<!-- image div starts from here -->
+		<div class="image">
+			<div class="interest">The Easiest Way to Get tours you interested</div>
+			<div class="find">Find tours, bool tour online and payment with more options.</div>
+			<div class="fill">
+				<input type="text" name="tour" placeholder="Tour Name">
+				<select class="select">
+				<option>Tour type</option>
+					<option>Summer Tour</option>
+					<option>Winter Tour</option>
+					<option>Vacation Tour</option>
+				</select>
+				<select class="select">
+					<option>Destination</option>
+					<option>Brazil</option>
+					<option>Cuba</option>
+					<option>Canada</option>
+					<option>Philipines</option>
+					<option>USA</option>
+				</select>
+				<select>
+					<option>Month</option>
+					<option>January</option>
+					<option>February</option>
+					<option>March</option>
+					<option>April</option>
+					<option>May</option>
+					<option>June</option>
+					<option>July</option>
+					<option>August</option>
+					<option>September</option>
+					<option>October</option>
+					<option>November</option>
+					<option>December</option>
+				</select>
+				<button><span>Search Tour</span></button>
+			</div><!-- fill div ends here-->
+		</div><!-- image div ends here -->
+		<!-- destination div starts from here -->
+		<div class="destination">
+			<div class="findtour">Find a Tour by</div>
+			<div class="desti">
+				DESTINATION
+				<div></div>
+			</div>
+			<div class="pic">
+				<div class="one">
+					<img src="picture/brazil.jpg">
+				   <div class="brazil">BRAZIL</div>
+				</div>
+				<div class="one">
+					<img src="picture/cuba.jpg">
+					<div class="cuba">CUBA</div>
+				</div>
+				<div class="one">
+					<img src="picture/canada.jpg">
+					<div class="canada">CANADA</div>
+				</div>
+				<div class="one">
+					<img src="picture/philipines.jpg">
+					<div class="philipines">PHILIPINES</div>
+				</div>
+
+				<!-- <div class="one"> -->
+					<img src="picture/usa.jpg" id="usa-img">
+					<div class="usa">USA</div>
+				<!-- </div> -->
+			</div>
+		</div><!-- destination div ends here -->
+		<!-- unnamed div starts from here -->
+		<div class="unnamed">
+			<div class="take">Take a Look at Our</div>
+			<div class="most">
+				MOST POPULAR TOURS
+				<div></div>
+			</div>
+			<!-- Popular_tour div starts from here-->
+			<div class="popular_tour">
+				<!-- sales div starts from here-->
+				<div class="sales">
+					<img src="picture/sea.jpg">
+					<div class="money">$93.00</div>
+					<div class="font">
+						<i class="fa fa-plane" aria-hidden="true"></i>
+						<i class="fa fa-car" aria-hidden="true"></i>
+					</div>
+					<div class="discover">
+						<span class="bold">Discover Brazil</span><br>
+						<span class="same"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;5 DAYS-4 NIGHTS</span><br>
+						<span>sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+					</div>
+					<div class="read_more">
+						<span class="left">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</span>
+						<span class="right">READ MORE</span>
+					</div>
+				</div><!-- sales div ends from here-->
+				<div class="sales">
+					<img src="picture/seahd.jpg">
+					<div class="money"><span class="over">$87.00</span>&nbsp; $82.00</div>
+					<div class="font">
+						<i class="fa fa-plane" aria-hidden="true"></i>
+						<i class="fa fa-car" aria-hidden="true"></i>
+					</div>
+					<div class="discover">
+						<span class="bold">Discover Brazil</span><br>
+						<span class="same"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;5 DAYS-4 NIGHTS</span><br>
+						<span>sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+					</div>
+					<div class="read_more">
+						<span class="left">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</span>
+						<span class="right">READ MORE</span>
+					</div><!-- div class name read_more ends here-->
+				</div>
+				<div class="sales">
+					<img src="picture/sea1.jfif" alt="">
+					<div class="money">$64.00</div>
+					<div class="font">
+						<i class="fa fa-plane" aria-hidden="true"></i>
+						<i class="fa fa-car" aria-hidden="true"></i>
+					</div>
+					<div class="discover">
+						<span class="bold">Discover Brazil</span><br>
+						<span class="same"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;5 DAYS-4 NIGHTS</span><br>
+						<span>sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+					</div>
+					<div class="read_more">
+						<span class="left">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</span>
+						<span class="right">READ MORE</span>
+					</div><!--read_more div ends here-->
+				</div>
+				<div class="sales">
+					<img src="picture/sea2.jfif" alt="">
+					<div class="money">$434.00</div>
+					<div class="font">
+						<i class="fa fa-plane" aria-hidden="true"></i>
+						<i class="fa fa-car" aria-hidden="true"></i>
+					</div><!-- font div ends here -->
+					<div class="discover">
+						<span class="bold">Discover Brazil</span><br>
+						<span class="same"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;5 DAYS-4 NIGHTS</span><br>
+						<span>sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+					</div><!-- discover div ends here-->
+					<div class="read_more">
+						<span class="left">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</span>
+						<span class="right">READ MORE</span>
+					</div><!--read_more div ends here -->
+				</div><!-- Popular_tour class div ends here-->
+				<div class="star"></div>
+			</div>
+		</div><!--unnamed div ends here -->
+		<div class="discount">
+			<div class="special_tour">
+				Special Tour in April, Discover Australia for 100<br>
+				<span class="customer">Customers with <span style="background-color: orange; color: black">discount 50%</span></span>
+			</div>
+			<div class="border"></div>
+			<div class="limited">
+				It's limited seating! Hurry up
+			</div>
+			<div id="demo"></div>
+			<div class="get_tour">
+				<i class="fa fa-plane" aria-hidden="true"></i>GET TOUR
+			</div>
+		</div>
+		<!--footer starts from here -->
+		<div class="footer">
+			<div class="footer_contain">
+				<div class="contact">
+					<div class="contact1">CONTACT</div><br>
+					Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt 
+					mollit anim id est laborum.<br>
+					<div class="contact2">
+						<i class="fa fa-map-marker" aria-hidden="true"></i>1945 Washington, San Francisco<br>
+						<i class="fa fa-phone" aria-hidden="true"></i>+1 234 567 89<br>
+						<i class="fa fa-inbox" aria-hidden="true"></i>hell@siteinfo.com
+					</div>
+				</div>
+				<div class="contact">
+					<div class="information1">
+						INFORMATION
+					</div>
+					<div class="information2">
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>Press center<br>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>Travel News<br>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>About Us<br>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>Privacy Policy<br>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>Contact Us<br>
+					</div>
+				</div>
+				<div class="contact">
+					<div class="our_menu">
+						OUR MENU
+					</div>
+					<div class="our_menu1">
+						<i class="fa fa-chevron-right" aria-hidden="true"></i><a class="reg" href="about_us.html">About Us</a><br>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i><a class="reg" href="faq.html">FAQs</a><br>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>Terms<br>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>Privacy Policy<br>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>contact
+					</div>
+				</div>
+				<div class="contact">
+					<div class="instagram">
+						INSTAGRAM
+					</div>
+					<div class="insta_pic">
+						<img src="picture/3.png" alt="insta_pic">
+						<img src="picture/4.png" alt="insta_pic">
+						<img src="picture/5.png" alt="insta_pic">
+						<img src="picture/6.png" alt="insta_pic">
+						<img src="picture/7.png" alt="insta_pic">
+						<img src="picture/8.png" alt="insta_pic">
+					</div>
+				</div>
+			</div><!-- footer_contain class div ends here-->
+			<hr>
+			<div class="copyright">
+				<div class="copyright1">Copyright 2017 Travel Peaceful. All Right Reserved</div>
+				<div class="copyright2">Terms of Use | Privacy Policy | &nbsp;<i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;<i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;<i class="fa fa-instagram" aria-hidden="true"></i></div>
+			</div>
+		</div><!--footer ends here-->
+		<div class="footer_part">
+			<div class="deals">To receive our best monthly deals</div>
+			<div class="join">JOIN THE NEWSLETTER</div>
+			<div class="border3"></div>
+			<div class="footer_part1">
+				<input type="text" name="email" placeholder="Email Address">
+				<button>SIGN UP NOW</button>
+			</div><!--footer_part1 div ends here-->
+		</div><!-- footer_part div ends here-->
+	</body><!--head ends here -->
+</html>
